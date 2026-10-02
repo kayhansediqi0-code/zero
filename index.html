@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>Kaihan · Front-End Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="./portfolio-front/style.css">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <h1>Fixing Front-End Problems</h1>
+
+      <p class="subtitle">
+        Professional fixes for responsive layouts, UI bugs, and visual issues.
+      </p>
+
+      <div class="preloader-line">
+        <div class="fill"></div>
+      </div>
+
+      <p class="preloader-click-hint">
+        Click anywhere to continue
+      </p>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container">
+
+      <div class="nav-bar">
+
+        <div class="logo">
+          <a href="#home">Kaihan Sediqi</a>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <ul class="nav-links" id="desktopNav">
+
+          <li>
+            <a href="#home"
+               class="nav-link active"
+               data-section="home">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#about"
+               class="nav-link"
+               data-section="about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#skills"
+               class="nav-link"
+               data-section="skills">
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects"
+               class="nav-link"
+               data-section="projects">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#experience"
+               class="nav-link"
+               data-section="experience">
+              Experience
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact"
+               class="nav-link"
+               data-section="contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+
+        <!-- HAMBURGER -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+
+      <!-- MOBILE NAV -->
+      <div class="nav-links-mobile" id="mobileNav">
+
+        <ul class="mobile-inner">
+
+          <li>
+            <a href="#home"
+               class="nav-link active"
+               data-section="home">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#about"
+               class="nav-link"
+               data-section="about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#skills"
+               class="nav-link"
+               data-section="skills">
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects"
+               class="nav-link"
+               data-section="projects">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#experience"
+               class="nav-link"
+               data-section="experience">
+              Experience
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact"
+               class="nav-link"
+               data-section="contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+      <div class="hero-bg"></div>
+
+      <div class="hero-right" id="heroRight">
+
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+
+        <div class="code-snippet">
+          { const app = new App(); }
+        </div>
+
+        <div class="code-snippet">
+          .hero { animation: glow 3s; }
+        </div>
+
+        <div class="glow-orb"></div>
+
+      </div>
+
+
+      <div class="container hero-content">
+
+        <span class="hero-tag" id="heroTag">
+          <span class="dot"></span>
+          Available for Freelance Projects
+        </span>
+
+
+        <h1 id="heroHeading">
+          Need a Website Built, Improved, or Fixed?
+          <br>
+
+          <span class="highlight">
+            I Turn Your Idea Into a Working Website.
+          </span>
+        </h1>
+
+
+        <div class="hero-role" id="heroRole">
+
+          <span class="role-prompt">
+            &gt;
+          </span>
+
+          <span
+            class="role-text"
+            id="roleText"
+          ></span>
+
+          <span class="role-cursor"></span>
+
+        </div>
+
+
+        <p id="heroDesc">
+          I build websites from scratch, redesign existing ones, and fix
+          front-end problems. Whether you have an idea, a design, or an
+          existing site, I can turn it into a responsive and user-friendly
+          experience.
+        </p>
+
+
+        <div class="btn-group" id="heroButtons">
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            id="hireBtn"
+          >
+            Let's Work Together
+          </a>
+
+          <a
+            href="#projects"
+            class="btn btn-outline"
+            id="workBtn"
+          >
+            View My Work
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          About Me
+        </h2>
+
+
+        <div class="about-grid fade-up">
+
+          <div class="about-image-card">
+
+            <img
+              src="./portfolio-front/about.jpg"
+              alt="Kaihan Development Setup 3D"
+            >
+
+          </div>
+
+
+          <div>
+
+            <h3 class="about-heading">
+              Kaihan Sediqi
+            </h3>
+
+            <span class="about-role">
+              Front-End Developer | Build • Redesign • Fix
+            </span>
+
+
+            <p class="about-text">
+              I help businesses turn ideas, designs, and existing websites
+              into responsive and user-friendly digital experiences.
+            </p>
+
+
+            <p class="about-text">
+              I build websites from scratch, redesign existing interfaces,
+              and fix front-end issues that affect usability and appearance.
+            </p>
+
+
+            <p class="about-text">
+              My focus is simple: understand what you need, solve the right
+              problem, and deliver a website that works well across devices.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section
+      id="skills"
+      class="section"
+      style="background:var(--bg-secondary);"
+    >
+
+      <div class="container">
+
+        <h2 class="section-title">
+          What I Can Do For Your Business
+        </h2>
+
+
+        <div
+          class="filter-bar"
+          id="filterBar"
+        >
+
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            type="button"
+          >
+            All
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="build"
+            type="button"
+          >
+            Build
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="redesign"
+            type="button"
+          >
+            Redesign & Customize
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="fix"
+            type="button"
+          >
+            Fix
+          </button>
+
+        </div>
+
+
+        <div
+          class="skills-grid"
+          id="skillsContainer"
+        >
+          <!-- Skills will be injected here -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Featured Projects
+        </h2>
+
+
+        <div
+          class="projects-grid"
+          id="projectsContainer"
+        >
+          <!-- Projects will be injected here -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section
+      id="experience"
+      class="section"
+      style="background:var(--bg-secondary);"
+    >
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Work Experience
+        </h2>
+
+
+        <div
+          class="timeline"
+          id="timelineContainer"
+        >
+          <!-- Timeline items will be injected here -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Get In Touch
+        </h2>
+
+
+        <div class="contact-wrapper">
+
+
+          <!-- CONTACT FORM -->
+          <div>
+
+            <h3
+              style="
+                margin-bottom:1rem;
+                font-family:'Plus Jakarta Sans',sans-serif;
+              "
+            >
+              Let's Build, Improve, or Fix Your Website
+            </h3>
+
+
+            <input
+              type="text"
+              class="portfolio-input"
+              placeholder="Your Name"
+              id="contactName"
+            >
+
+
+            <input
+              type="email"
+              class="portfolio-input"
+              placeholder="Your Email Address"
+              id="contactEmail"
+              style="margin-top:1rem;"
+            >
+
+
+            <textarea
+              class="portfolio-textarea"
+              rows="4"
+              placeholder="Describe your project or issue..."
+              id="contactMsg"
+              style="margin-top:1rem;"
+            ></textarea>
+
+
+            <button
+              class="btn btn-primary"
+              id="sendMsgBtn"
+              type="button"
+              style="
+                margin-top:1rem;
+                border:none;
+                cursor:pointer;
+                width:100%;
+              "
+            >
+              Start a Project
+            </button>
+
+
+            <p
+              id="formFeedback"
+              style="margin-top:0.8rem;"
+            ></p>
+
+          </div>
+
+
+          <!-- CONTACT INFORMATION -->
+          <div>
+
+            <h3
+              style="
+                font-family:'Plus Jakarta Sans',sans-serif;
+              "
+            >
+              Contact Information
+            </h3>
+
+
+            <p
+              style="
+                margin:0.8rem 0 1.5rem 0;
+                color:var(--text-secondary);
+              "
+            >
+              Have a new idea, an existing website that needs improvement,
+              or a front-end problem to solve? Tell me what you need,
+              and let's find the right solution for your project.
+            </p>
+
+
+            <!-- EMAIL -->
+            <div class="contact-info-item">
+
+             <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=kaihansediqi10@gmail.com"
+  class="icone"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fas fa-envelope"></i>
+</a>
+
+
+              <div>
+
+                <strong>
+                  Email
+                </strong>
+
+                <br>
+
+                <p class="content">
+                  kaihansediqi10@gmail.com
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="contact-info-item">
+
+              <a
+                href="https://www.google.com/maps?q=Kabul+Kote+Sangi"
+                class="icone"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+              </a>
+
+
+              <div>
+
+                <strong>
+                  Location
+                </strong>
+
+                <br>
+
+                <p class="content">
+                  Kabul, Kote Sangi
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- SERVICE -->
+            <div class="contact-info-item">
+
+              <i class="fas fa-briefcase"></i>
+
+
+              <div>
+
+                <strong>
+                  Need a Website?
+                </strong>
+
+                <br>
+
+                Whether you need a website built from scratch,
+                an existing site redesigned, or a front-end issue fixed,
+                I'm ready to help turn your idea into a clean,
+                responsive experience.
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      &copy; 2026 Kaihan &mdash; Crafting digital excellence.
+      All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- PROJECT TEMPLATE -->
+  <template id="projectTemplate">
+
+    <div class="project-card card-hover fade-up">
+
+      <div class="project-thumb">
+
+        <img
+          src="./portfolio-front/newlogo.jpg"
+          alt="Project Image"
+          loading="lazy"
+        >
+
+      </div>
+
+
+      <i class="fas fa-laptop-code project-icon"></i>
+
+
+      <h3>
+        Project Title
+      </h3>
+
+
+      <p>
+        Project Description goes here.
+      </p>
+
+
+      <small class="project-tech">
+        Tech Stack
+      </small>
+
+
+      <a
+        href="https://silentknights01.github.io/"
+        class="project-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Live Website
+
+        <i
+          class="fas fa-arrow-right"
+          style="font-size:0.75rem;"
+        ></i>
+
+      </a>
+
+    </div>
+
+  </template>
+
+
+  <!-- MAIN JS -->
+  <script src="./portfolio-front/main.js"></script>
+
+
+  <!-- MOBILE / DESKTOP SMOOTH NAVIGATION FIX -->
+ 
+
+</body>
+</html>
